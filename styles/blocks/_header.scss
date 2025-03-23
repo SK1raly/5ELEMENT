@@ -1,0 +1,135 @@
+.header {
+  &-top {
+    display: flex;
+    align-items: self-start;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--section-padding-x);
+    padding-top: 18px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    -webkit-user-select: none;
+    user-select: none;
+
+    @include desktop {
+      padding-inline: 18px;
+    }
+
+    &::before {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 50%, transparent);
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 112px;
+      left: 0;
+      top: 0;
+      pointer-events: none;
+      opacity: 1;
+      z-index: -10;
+    }
+
+    &__logo {
+      font-size: 50px;
+      font-weight: 600;
+      text-shadow: 0 0 5px #acb378;
+
+      p {
+        font-size: 26px;
+        text-align: center;
+        color: #fff;
+
+        @include tablet {
+          font-size: 16px;
+        }
+      }
+
+      @include hover {
+        opacity: 0.8;
+      }
+
+      @include desktop {
+        font-size: 36px;
+      }
+      @include tablet {
+        font-size: 28px;
+      }
+    }
+
+    .menu {
+      display: flex;
+      font-size: 22px;
+
+      @include desktop {
+        font-size: 18px;
+      }
+
+      @include tablet {
+        font-size: 16px;
+      }
+
+      &-list {
+        display: flex;
+        color: #fff;
+        align-items: center;
+      }
+
+      &-item {
+        cursor: pointer;
+        padding: 10px 20px;
+        position: relative;
+
+        @include hover {
+          &::after {
+            width: 90%;
+          }
+        }
+
+        @include desktop {
+          padding: 10px 10px;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          translate: -50%;
+          width: 0;
+          height: 2px;
+          background-color: currentColor;
+          transition-duration: var(--transition-duration);
+        }
+
+        &:last-child() {
+          padding-right: 20px;
+        }
+      }
+
+      button {
+        height: 68px;
+        padding-inline: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--color-accent-alt);
+        cursor: pointer;
+
+        @include hover {
+          background-color: var(--color-dark);
+          color: var(--color-accent-alt);
+        }
+
+        @include desktop {
+          height: 58px;
+        }
+
+        @include tablet {
+          height: 48px;
+          padding-inline: 10px;
+        }
+      }
+    }
+  }
+}

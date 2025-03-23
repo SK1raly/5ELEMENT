@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>5ELEMENT</title>
+</head>
+<body>
+  <div class="header">
+    <div class="header-top">
+      <a href="/" class="header-top__logo">5ELEMENT <p>Салон Красоты</p></a>
+      <div class="menu">
+        <ul class="menu-list hidden-mobile">
+          <li class="menu-item"><a href="#op1">Описание</a></li>
+          <li class="menu-item"><a href="services.html">Услуги</a></li>
+          <li class="menu-item"><a href="#op3">Специалисты</a></li>
+          <li class="menu-item"><a href="#op4">Работы</a></li>
+          <li class="menu-item"><a href="#op5">Контакты</a></li>
+        </ul>
+        <button class="menu-button hidden-mobile" type="button" >Записаться</button>
+        <button class="header__burger-button burger-button visible-mobile" type="button" onclick="mobileOverlay.showModal()">
+          <span class="visually-hidden">Open navigation menu</span>
+        </button>
+      </div>
+    </div>
+  </div> 
+
+  <section class="description" id="op1">
+    <div class="description-wrapper">
+      <div class="description-top">Мир обречен на гибель, его могут спасти 5 Элементов: идеальный маникюр, гладкие пяточки, шикарные бровки, густые реснички и само совершенство - Идеальная Ты!</div>
+      <div class="description-bot">Приглашаем усовершенствоваться в наш уютный кабинет красоты!</div>
+    </div>
+  </section>
+
+
+  <section class="section masters" id="op3">
+    <div class="section-top">
+      <div class="section-top__line"></div>
+      <div class="section-top__name">Специалисты</div>
+      <div class="section-top__line"></div>
+    </div>
+
+    <div class="masters-wrapper wow">
+      <div class="masters-wrp">
+        <p>Все наши работники - это высококвалифицированные специалисты, с немалым стажем работы и отличными навыками, мы гарантируем качество</p>
+      </div>
+      <div class="masters-sld">
+        <button class="prev"><</button>
+      <div class="masters-slider">
+        <div class="masters-slide">
+          <header class="masters-slide__header">
+            <img src="images/profile1.jpg" alt="Фото Специалиста" width="200" height="200" class="masters-slide__image">
+            <div class="masters-slide__info">
+              <h2 class="masters-slide__info-name">Елизабет Суон</h2>
+              <p class="masters-slide__info-post">Мастер маникюра</p>
+            </div>
+            <a href="" target="_blank" class="masters-slide__link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#ffca4d">
+                <path d="M384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24l94.1 0L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135L288 328c0 13.3 10.7 24 24 24s24-10.7 24-24l0-160c0-13.3-10.7-24-24-24l-152 0z"/>
+              </svg>
+            </a>
+          </header>
+          <div class="masters-slide__body">
+            <p>10+ лет опыта работы в нашем салоне, исключительно положительные отзывы клиентов, пройдены курсы по маникюру </p>
+          </div>
+        </div>
+        <div class="masters-slide">
+          <header class="masters-slide__header">
+            <img src="images/profile2.jpg" alt="Фото Специалиста" width="200" height="200" class="masters-slide__image">
+            <div class="masters-slide__info">
+              <h2 class="masters-slide__info-name">Джесси Пинкман</h2>
+              <p class="masters-slide__info-post">Мастер Педикюра</p>
+            </div>
+            <a href="" target="_blank" class="masters-slide__link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#ffca4d">
+                <path d="M384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24l94.1 0L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135L288 328c0 13.3 10.7 24 24 24s24-10.7 24-24l0-160c0-13.3-10.7-24-24-24l-152 0z"/>
+              </svg>
+            </a>
+          </header>
+          <div class="masters-slide__body">
+            <p>6+ лет опыта работы в нашем салоне, положительные отзывы клиентов, пройдены курсы по педикюру и многие другие</p>
+          </div>
+        </div>
+        <div class="masters-slide">
+          <header class="masters-slide__header">
+            <img src="images/profile3.jpg" alt="Фото Специалиста" width="200" height="200" class="masters-slide__image">
+            <div class="masters-slide__info">
+              <h2 class="masters-slide__info-name">Джесси Валентайн</h2>
+              <p class="masters-slide__info-post">Мастер маникюра и педикюра</p>
+            </div>
+            <a href="" target="_blank" class="masters-slide__link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#ffca4d">
+                <path d="M384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24l94.1 0L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135L288 328c0 13.3 10.7 24 24 24s24-10.7 24-24l0-160c0-13.3-10.7-24-24-24l-152 0z"/>
+              </svg>
+            </a>
+          </header>
+          <div class="masters-slide__body">
+            <p>4+ года опыта работы в нашем салоне, положительные отзывы клиентов, пройдены курсы по маникюру, педикюру, и многие другие</p>
+          </div>
+        </div>
+      </div>
+      <button class="next">></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="op4">
+    <div class="section-top">
+      <div class="section-top__line"></div>
+      <div class="section-top__name">Примеры работ</div>
+      <div class="section-top__line"></div>
+    </div>
+
+    <div class="works wow">
+      <div class="works-list">
+        <div class="works-item">
+          <img src="images/1.jpg" alt="">
+        </div>
+        <div class="works-item">
+          <img src="images/2.jpg" alt="">
+        </div>
+        <div class="works-item">
+          <img src="images/3.jpg" alt="">
+        </div>
+        <div class="works-item">
+          <img src="images/4.jpg" alt="">
+        </div>
+        <div class="works-item">
+          <img src="images/5.jpg" alt="">
+        </div>
+        <div class="works-item">
+          <img src="images/6.jpg" alt="">
+        </div>
+        <div class="works-item">
+          <img src="images/7.jpg" alt="">
+        </div>
+        <div class="works-item">
+          <img src="images/8.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="works-list" aria-hidden>
+        <div class="works-item">
+          <img src="images/1.jpg" alt="">
+        </div>
+        <div class="works-item">
+          <img src="images/2.jpg" alt="">
+        </div>
+        <div class="works-item">
+          <img src="images/3.jpg" alt="">
+        </div>
+        <div class="works-item">
+          <img src="images/4.jpg" alt="">
+        </div>
+        <div class="works-item">
+          <img src="images/5.jpg" alt="">
+        </div>
+        <div class="works-item">
+          <img src="images/6.jpg" alt="">
+        </div>
+        <div class="works-item">
+          <img src="images/7.jpg" alt="">
+        </div>
+        <div class="works-item">
+          <img src="images/8.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contacts" id="op5">
+    <div class="section-top">
+      <div class="section-top__line"></div>
+      <div class="section-top__name">Контакты</div>
+      <div class="section-top__line"></div>
+    </div>
+
+    <div class="contact wow">
+      <div class="contact-content">
+        <div class="contact-content__location">Адрес:
+          <span>Улица Школьная, 2 этаж, 5 кабинет</span>
+        </div>
+        <div class="contact-content__number">Телефон:
+          <span>+7(992)290-10-90</span>
+        </div>
+        <div class="contact-content__hours">Режим работы:
+          <span>Ежедневно с 10:00 до 21:00</span>
+        </div>
+        <div class="contact-content__socials">
+          <div class="contact-content__socials">
+            <a href="https://www.instagram.com/nails.natali.spb">
+              <img src="./images/icons8-instagram.svg" alt="">
+            </a>
+            <a href="https://vk.com/na1nail">
+              <img src="./images/vk.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/shkolnaya_ulitsa_106/Z0kYdAZpSUYOQFtjfXV4cXtjYQ==/?indoorLevel=1&ll=30.219427%2C59.990069&utm_medium=mapframe&utm_source=maps&z=16.8" style="color:#eee;font-size:12px;position:absolute;top:14px;">Школьная улица, 106 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=30.219427%2C59.990069&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzQ0OTMyNhJN0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KjQutC-0LvRjNC90LDRjyDRg9C70LjRhtCwLCAxMDYiCg2VwPFBFXz2b0I%2C&z=16.8" width="532" height="244" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list__item hidden-mobile">
+          <a href="#op1">Описание</a>
+        </li>
+        <li class="nav-list__item hidden-mobile">
+          <a href="#op2">Услуги</a>
+        </li>
+        <li class="nav-list__item hidden-mobile">
+          <a href="#op3">Специалисты</a>
+        </li>
+        <li class="nav-list__item hidden-mobile">
+          <a href="#op4">Работы</a>
+        </li>
+        <li class="nav-list__item hidden-mobile">
+          <a href="#op5">Контакты</a>
+        </li>
+        <div class="nav-list__item-up">
+          <img src="./images/arrow-up.png" alt="">
+          <a href="#op1">Наверх</a>
+        </div>
+      </ul>
+    </nav>
+  </footer>
+
+  <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+      <button
+        class="mobile-overlay__close-button cross-button"
+        type="submit"
+      >
+        <span class="visually-hidden">Close navigation menu</span>
+      </button>
+    </form>
+    <div class="mobile-overlay__body">
+      <ul class="mobile-overlay__list">
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#op1">Описание</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#op2">Услуги</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#op3">Специалисты</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#op4">Работы</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#op5">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </dialog>
+
+  <script src="javascripts/description.js"></script>
+  <script src="javascripts/masters.js"></script>
+  <script src="javascripts/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>

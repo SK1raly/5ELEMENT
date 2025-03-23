@@ -1,0 +1,181 @@
+.masters {
+  background-color: var(--color-bg-alt);
+}
+
+.masters-sld {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+
+  @include mobile {
+    display: inline;
+    position: relative;
+
+    button {
+      position: absolute;
+    }
+
+    .prev {
+      bottom: -10%;
+      left: 0;
+    }
+    .next {
+      bottom: -10%;
+      right: 0;
+    }
+  }
+}
+
+.masters-wrapper {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  @media (max-width: 1100px) {
+   flex-direction: column;     
+  }
+
+  @include mobile-big {
+    margin-bottom: 80px;
+  }
+
+  .masters-slider {
+    gap: 10px;
+    max-width: 622px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    @include tablet-s {
+      max-width: 302px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .masters-slide {
+      flex-shrink: 0;
+      background-color: #2b2b2b;
+      box-sizing: content-box;
+      color: #ffca4d;
+      scroll-snap-align: start;
+      max-width: 600px;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 6px;
+
+      @include tablet-s {
+        max-width: 280px;
+      }
+
+      &__link {
+        @include tablet-s {
+          display: none;
+        }
+      }
+
+      &__header {
+        display: flex;
+
+        @include tablet-s {
+          flex-direction: column;
+        }
+
+        img {
+          object-fit: cover;
+          object-position: top;
+          margin-right: 20px;
+          border-radius: 6px;
+          transform-origin: left top; /* Это поможет контролировать точку масштабирования */
+          transition: transform 0.3s ease; /* Добавим плавность */
+
+          @include tablet-s {
+            margin: 0 auto;
+            margin-bottom: 10px;
+          }
+
+          &:hover {
+            transform: scale(1.6);
+
+            @include desktop {
+              transform: scale(1.45);
+            }
+
+            @include tablet-s {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+
+      &__info {
+        align-self: end;
+        font-size: 24px;
+
+        @include tablet-s {
+          align-self: start;
+          text-align: center;
+        }
+
+        &-post {
+          font-size: 20px;
+        }
+      }
+
+      &__body {
+        padding-top: 20px;
+        margin-top: 20px;
+        border-top: 1px solid black;
+        font-size: 20px;
+
+        @include desktop {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.masters-wrp {
+  max-width: 700px;
+  font-size: 28px;
+  border-left: 3px solid black;
+  padding: 10px;
+  margin-right: 60px;
+
+  @include desktop {
+    font-size: 20px;
+  }
+
+  @media (max-width: 1100px) {
+    margin-right: 0;
+    border-left: none;
+    border-bottom: 3px solid black; 
+    margin-bottom: 30px;
+   }
+}
+
+.masters-slide__link {
+  margin-left: auto;
+
+  svg {
+    width: 40px;
+  }
+}
+
+.prev, .next {
+  font-size: 60px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

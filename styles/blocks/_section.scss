@@ -1,0 +1,26 @@
+.section {
+  display: flex;
+  flex-direction: column;
+
+  &-top {
+    display: flex;
+    align-items: center;
+    margin: 60px 0 60px;
+
+    &__line {
+      height: 4px;
+      width: 100%;
+      background-color: var(--color-accent-alt);
+      position: relative;
+    }
+
+    &__name {
+      color: var(--color-accent-alt);
+      text-align: center;
+      border-radius: 10px;
+      padding: 0 20px;
+      font-size: 36px;
+      font-weight: 500;
+    }
+  }
+}

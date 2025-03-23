@@ -1,0 +1,35 @@
+.footer {
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 40px;
+    font-size: 22px;
+
+    &-list {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+
+      &__item {
+        height: 38px;
+        cursor: pointer;
+
+        @include hover {
+          color: #fff;
+        }
+
+        &-up {
+          display: flex;
+          gap: 4px;
+
+          img {
+            width: 22px;
+            height: 22px;
+          }
+        }
+      }
+    }
+  }
+}

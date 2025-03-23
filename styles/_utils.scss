@@ -1,0 +1,26 @@
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.hidden-mobile {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include tablet-above {
+    display: none !important;
+  }
+}
+
+.wow {
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: all 1s ease-out;
+}
+
+.animated {
+  transform: translateY(0);
+  opacity: 1;
+}
